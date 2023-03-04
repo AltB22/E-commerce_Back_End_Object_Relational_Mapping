@@ -9,6 +9,7 @@ const sequelize = process.env.JAWSDB_URL
       host: 'localhost',
       dialect: 'mysql',
       //Do we need to include DB location here?  or PORT number at least?
+      port: 3306,
       dialectOptions: {
         decimalNumbers: true,
       },
