@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
       include: [
         {
         model: Category,
-        attributes: ['category_name', 'category_id']
+        attributes: ['category_name']
         },
         {
         model: Tag,
