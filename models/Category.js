@@ -1,4 +1,3 @@
-// const { VARCHAR } = require('mysql2/lib/constants/types.js');
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
