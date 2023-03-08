@@ -55,17 +55,19 @@ router.post('/', async (req, res) => {
 });
 
 router.put('/:id', (req, res) => {
-  // update a tag's name by its `id` value
+  // update a tag by its `id` value
   Tag.update(req.body, {
     where: {
-      id: req.params.id,
-    },
+      product_id: req.params.id
+    }
   })
-    .then((updatedProductTags) => res.json(updatedProductTags))
-    .catch((err) => {
-      // console.log(err);
-      res.status(400).json(err);
-    });
+  .then(tagData => {
+    if(!tagData) {
+      res.status(404).json({message: 'No tag found matching this id'});
+      return;
+    }
+    res.json(tagData);
+  });
 });
 
 
