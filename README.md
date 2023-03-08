@@ -2,7 +2,8 @@
   [![License site](https://img.shields.io/badge/License-MIT-blue.svg)](https://choosealicense.com/licenses/mit)
 
   ## Description
-  - This application uses JavaScript and Inquirer.js to dynamically create content for an HTML file from the command line interface.  It also utilizes the built in fs module to interact with the file system.  The user will be presented with a series of prompts in the commmand line, the asnwers to which will be rendered as content in a new index.html file which can then be launched in the browser.  The resulting site is intented to serve as a profile page for development teams that incluedes information about the team manager, team engineers, and team interns.
+  - E-Commerce reprepresents the largest sector of the electronics industry having generated roughly $29Trillion in 2017 alone (Source: UN Conference of Trade & Development). Online merchants need not only functional front ends (user facing) for their applications but also back ends capbale of supporting and tracking the flow of merchandise being purchased.  This application features the back back end functionality needed to complete a fully functional e-commerce website application.
+
   ## Table of Contents
   [Installation](#installation)
 
@@ -17,15 +18,24 @@
   [Questions](#questions)
 
   ## Installation
-  - In order to run the app, installation of node.js version 16 or higher is required on the user's device.  In addition, inquirer.js (https://www.npmjs.com/package/inquirer/v/8.2.4) is required to be installed in the parent directory.  Finally, testing features are built in which require jest to be installed also.  
+  - In order to run the app, installation of node.js version 16 or higher is required on the user's device.  In addition, MySQL needs to be installed with server running in the background.  MySQL2 and Sequelize packages need to be installed as well as Express.js.  To insure proper installation, the user should run the following command in the command line interface: `npm install`.  Insomnia may be required to be installed if attempting to utilize this application with a front end attached.
+
   ## Usage
-  -  This application saves time for development team managers who want to quickly and easily generate a profile page for their team  that includes information about themselves, their engineers, and their interns.  The app serves as a template propmting  the user to answer a series of questions that are required for output.  Access is via the command line terminal interface.  Please see link for video on proper installation and usage of the appliccation.  
-  ## Contributing
-  - Developers are welcome to contribute to this project by cloning this GitHub repository to their local device.  Expanding the app's functionality to include additional roles beyond Manager, Engineer, and Intern would be likely the most helpful.  Keep in mind that each role type is defined as a class in the lib directory.  Any new classes would need to extend the intial employee class. 
-  ## Tests
-  - Currently no tests are available to run.
+  - The following steps should be taken in sequence in order to run the application.
+  - Clone the project source code to your local device `$ git clone git@github.com:AltB22/E-commerce_Back_End_Object_Relational_Mapping.git`
+  - Connect to MySQL database With your own database credentials; `$ mysql -u root -p`
+  - Initialize the application `$ npm init -y`
+  - Install the proper packages   `npm install`
+  - Create the database schema `mysql> SOURCE db/schema.sql;`
+  - Exit the database mysql> `exit`
+  - Populate the database with seed data `$ npm run seed`
+  - Start the server `$ npm start`
+  - Navigate to front end or Insomnia on http://localhost:3001
+
+  ## Mock Up & Demo Using Insomnia
+
   ## Questions
-  - Please visit my GitHub profile for further information about his project (https://github.com/AltB22)
+  - Please visit my GitHub profile for further information about this project (https://github.com/AltB22)
   - Please email Please contact William Massie at the following email address: altbcodes@gmail.com with additional quesitons.
   ## License
   - This application is covered under the MIT license
