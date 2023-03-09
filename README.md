@@ -2,7 +2,7 @@
   [![License site](https://img.shields.io/badge/License-MIT-blue.svg)](https://choosealicense.com/licenses/mit)
 
   ## Description
-  - E-Commerce reprepresents the largest sector of the electronics industry having generated roughly $29Trillion in 2017 alone (Source: UN Conference of Trade & Development). Online merchants need not only functional front ends (user facing) for their applications but also back ends capbale of supporting and tracking the flow of merchandise being purchased.  This application features the back back end functionality needed to complete a fully functional e-commerce website application.
+  - E-Commerce reprepresents the largest sector of the electronics industry having generated roughly $29 Trillion in 2017 alone (Source: UN Conference of Trade & Development). Online merchants need not only functional front ends (user facing) for their applications but also back ends capbale of supporting and tracking the flow of merchandise being purchased.  This application features the back back end functionality needed to complete a fully functional e-commerce website application.
 
   ## Table of Contents
   [Installation](#installation)

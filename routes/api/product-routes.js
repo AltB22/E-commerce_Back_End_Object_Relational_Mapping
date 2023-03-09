@@ -12,11 +12,11 @@ router.get('/', async (req, res) => {
       include: [
         {
         model: Category,
-        attributes: ['category_name']
+        attributes: ['id','category_name']
         },
         {
         model: Tag,
-        attributes: ['tag_name']
+        attributes: ['id', 'tag_name']
         }
         ]
        });
@@ -61,7 +61,8 @@ router.post('/', async (req, res) => {
   try {
     const productData = await Product.create({
       product_name: req.body.product_name,
-      product_price: req.body.product_price
+      price: req.body.price,
+      stock: req.body.stock,
     });
     res.status(200).json(productData);
   } catch (err) {
