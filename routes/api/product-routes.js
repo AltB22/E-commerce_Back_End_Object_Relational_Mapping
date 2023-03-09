@@ -63,6 +63,7 @@ router.post('/', async (req, res) => {
       product_name: req.body.product_name,
       price: req.body.price,
       stock: req.body.stock,
+      category_id: req.body.category_id
     });
     res.status(200).json(productData);
   } catch (err) {

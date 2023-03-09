@@ -32,7 +32,11 @@
   - Start the server `$ npm start`
   - Navigate to front end or Insomnia on http://localhost:3001
 
-  ## Mock Up & Demo Using Insomnia
+  ## Demo Video Using Insomnia to Test Routes
+
+  Please see link below for demo video:
+
+  https://bootcampspot.instructuremedia.com/embed/a9ebd476-3a25-46ad-af4c-7fbdf1b590ad
 
   ## Questions
   - Please visit my GitHub profile for further information about this project (https://github.com/AltB22)
